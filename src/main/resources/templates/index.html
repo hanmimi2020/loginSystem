@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>ログイン画面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="login">
+        <form action="/login" method="GET">
+            ログインID：　<input type="text" name="loginId"><br>
+            パスワード：　<input type="password" name="password"><br>
+            <input type="submit" value="ログイン">
+            <input type="button" onclick="toRegister()" value="アカウント新規登録" />
+        </form>
+
+
+    </div>
+</body>
+<script>
+var toRegister = function() {
+	window.location.href = "/register"
+}
+
+</script>
+
+</html>
